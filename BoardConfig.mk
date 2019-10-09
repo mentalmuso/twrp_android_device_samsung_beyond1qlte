@@ -73,6 +73,9 @@ QCOM_BOARD_PLATFORMS += msmnile
 # Partitions (userdata ??)
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
+# System as root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # Workaround for error copying vendor files to recovery ramdisk
 TARGET_COPY_OUT_VENDOR := vendor
 
